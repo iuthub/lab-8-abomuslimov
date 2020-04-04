@@ -19,3 +19,15 @@ if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
 }
 
 require_once __DIR__.'/public/index.php';
+
+function myTest() {
+    static $x = 0;
+    echo $x;
+    $x++;
+}
+
+myTest();
+echo "<br>";
+myTest();
+echo "<br>";
+myTest();

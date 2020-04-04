@@ -25,4 +25,12 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
+    $x = 10;  
+$y = 6;
+
+echo $x * $y;
+$x = 50;
+$y = 50;
+
+var_dump($x >= $y); // returns true because $x is greater than or equal to $y
 }
